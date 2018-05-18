@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mainscreen">
+   <children>
+      <TabPane prefHeight="427.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Chuyển đổi">
+            <content>
+              <AnchorPane prefHeight="356.0" prefWidth="549.0">
+                     <children>
+                        <HBox layoutY="-1.0" prefHeight="371.0" prefWidth="600.0" spacing="20.0">
+                           <children>
+                              <VBox prefHeight="371.0" prefWidth="293.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Số nhị phân" />
+                                    <TextField fx:id="tab1Input1" promptText="11.01" />
+                                    <Separator prefWidth="200.0" />
+                                    <Label text="Dạng thập phân" />
+                                    <TextField fx:id="tab1Output1" editable="false" />
+                                    <Separator prefWidth="200.0" />
+                                    <HBox prefHeight="30.0" prefWidth="268.0" spacing="10.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#tab1Cal1" prefHeight="25.0" prefWidth="127.0" text="Tính" />
+                                          <Button mnemonicParsing="false" onAction="#tab1Clear1" prefHeight="25.0" prefWidth="130.0" text="Làm sạch" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox prefHeight="371.0" prefWidth="307.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Số thập phân" />
+                                    <TextField fx:id="tab1Input2" promptText="1998" />
+                                    <Separator prefWidth="200.0" />
+                                    <Label text="Dạng nhị phân" />
+                                    <TextField fx:id="tab1Output2" editable="false" />
+                                    <Separator prefWidth="200.0" />
+                                    <HBox prefHeight="28.0" prefWidth="282.0" spacing="10.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#tab1Cal2" prefHeight="25.0" prefWidth="125.0" text="Tính" />
+                                          <Button mnemonicParsing="false" onAction="#tab2Clear2" prefHeight="25.0" prefWidth="146.0" text="Làm sạch" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Nhân / Chia">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="372.0" prefWidth="600.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="Số thứ 1" />
+                              <TextField fx:id="tab2Input1" promptText="10.0" />
+                              <Label text="Số thứ 2" />
+                              <TextField fx:id="tab2Input2" promptText="110" />
+                              <Separator prefWidth="200.0" />
+                              <HBox prefHeight="155.0" prefWidth="500.0" spacing="20.0">
+                                 <children>
+                                    <VBox prefHeight="155.0" prefWidth="228.0" spacing="10.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#tab2Mult" prefHeight="25.0" prefWidth="227.0" text="Nhân" />
+                                          <Label text="Kết quả" />
+                                          <TextField fx:id="tab2Output1Bin" editable="false" />
+                                          <Label text="Dạng thập phân" />
+                                          <TextField fx:id="tab2Output1Dec" editable="false" />
+                                       </children>
+                                    </VBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <VBox prefHeight="195.0" prefWidth="231.0" spacing="10.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#tab2Div" prefHeight="25.0" prefWidth="252.0" text="Chia" />
+                                          <Label text="Kết quả" />
+                                          <TextField fx:id="tab2Output2Bin" editable="false" />
+                                          <Label text="Dạng thập phân" />
+                                          <TextField fx:id="tab2Output2Dec" editable="false" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Separator prefWidth="200.0" />
+                              <Button mnemonicParsing="false" onAction="#tab2Clear" prefHeight="25.0" prefWidth="554.0" text="Làm sạch" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Bù">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutY="-2.0" prefHeight="403.0" prefWidth="600.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="Số nhị phân" />
+                              <TextField fx:id="tab3Input" promptText="10.0" />
+                              <Separator prefWidth="200.0" />
+                              <Label text="Bù 1" />
+                              <TextField fx:id="tab3Output1" editable="false" />
+                              <Label text="Bù 2" />
+                              <TextField fx:id="tab3Output2" editable="false" />
+                              <Separator prefWidth="200.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#tab3Cal" prefHeight="25.0" prefWidth="251.0" text="Tính toán" />
+                                    <Button mnemonicParsing="false" onAction="#tab3Clear" prefHeight="25.0" prefWidth="239.0" text="Làm sạch" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

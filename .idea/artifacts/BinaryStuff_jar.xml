@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BinaryStuff:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BinaryStuff_jar</output-path>
+    <root id="archive" name="BinaryStuff.jar">
+      <element id="module-output" name="BinaryStuff" />
+    </root>
+  </artifact>
+</component>
